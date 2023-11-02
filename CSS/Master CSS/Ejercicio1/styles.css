@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#general{
+    width: 1200px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: royalblue;
+    color: white;
+    font-size: large;
+    text-align: center;
+    line-height: 90px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#menu{
+    background-color: #eee;
+}
+
+#menu ul li{
+  /*  display: inline-block;*/
+  display: block;
+  float: left;
+  border-right: 1px solid #ccc;
+}
+#menu ul li a{
+    display: block;
+    padding: 15px;
+    color: #444;
+}
+
+#menu ul li:hover{
+    background-color: rgb(25, 52, 134);
+    cursor: pointer;
+}
+#menu ul li:hover a{
+    color: white;
+}
+
+#contenido{
+    width: 69%;
+    float: left;
+}
+
+#lateral{
+    float:left;
+    width: 30%;
+    border: 1px solid red;
+    min-height: 500px;
+    text-align: center;
+    max-height: 650px;
+    overflow-y: scroll;
+}
+
+#contenido > h1{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+    text-shadow: 1px 1px 2px gray;
+}
+
+#contenido .caja{
+    position: relative;
+    width: 40%;
+    height: 250px;
+    background-color: #ccc;
+    border: 1px solid gray;
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 200px;
+    color: #444;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 2px gray;
+    border-radius: 50px 10px 4px 61px;
+}
+
+.sombra-interior{
+    box-shadow: 5px 5px 10px gray inset !important ;
+}
+
+footer{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #ccc;
+    background: #eee;
+    text-align: center;
+    color: #444;
+}
+
+.libre{
+    position: absolute;
+    top: 500px;
+    right: 60%;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+}
+
+.libre1{
+    z-index: 100
+}
+
+.libre2{
+    background-color: green;
+    top: 485px;
+    right: 60%;
+    z-index: 101;
+}
+
+.fija{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+}
