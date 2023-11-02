@@ -1,7 +1,7 @@
 
 // Variables
 $fuente-tipica: sans-serif, Helvetica, Arial;
-$color-fondo: white;
+$color-fondo: #ccc;
 $color-letra: red;
 $color-secundario: rgb(103, 11, 11);
 
@@ -86,3 +86,51 @@ p{
     color: green;
     border-color: green;
 }
+
+// Operadores
+.clearfix{
+    clear: both;
+}
+
+h1{
+    font-size: 20px + 5px - 1px;
+}
+
+$caja: 200px;
+$wrap: 900px;
+
+.cajas{
+    width: $wrap;
+    margin: 0px auto;
+}
+
+.caja{
+    float: left;
+    width: $caja / $wrap * 100%;
+    margin: 10px;
+}
+
+// Condicionales - if
+$color-fondo:orange;
+h1{
+    @if $color-fondo == #ccc{
+        color: black;
+    } @else if $color-fondo == black {
+        color: lightsalmon;
+    } @else{
+        color: pink;
+    }
+}
+
+//For
+$contador: 1;
+@for $contador from 1 through 8{
+
+    .listado ul li:nth-child(#{$contador}){
+        font-size: $contador * 2px;
+    }
+}
+
+//Each
+
+//While
