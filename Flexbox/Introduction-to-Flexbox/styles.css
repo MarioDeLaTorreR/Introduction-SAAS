@@ -11,8 +11,10 @@ body{
     flex-wrap: wrap;
     */
     flex-flow: row wrap;
+    justify-content: space-around;/*Alineacion horizontal*/
+    align-items: flex-start;/*Alineacion Vertical*/
 
-    
+    height: 600px;
 
     border: 3px solid black;
     padding: 5px;
@@ -21,7 +23,7 @@ body{
 .caja{
     /*flex-grow: 1;Sirve para especificar que cantidad de espacio puede usar cada elemento flex */
     /*flex-basis: calc((100% / 3) - 68px); Se pueden combinar para hacer elementos flexibles*/
-
+    flex-grow: 1;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -33,19 +35,24 @@ body{
 }
 
 .red{
+    align-self: flex-start;
     background: var(--rojo);
 }
 
 .green{
+    /*margin-top: 10%;*/
+    align-self: center;
     background: green;
 }
 
 .blue{
     /*flex-shrink: 0;Sirve para reducir el tamaño de una caja lo contrario a flex-grow*/
+    align-self: center;
     background: blue;
 }
 
 .orange{
     /*flex-basis: 100%;Sirve para declarar el ancho minimo o ancho base*/
+    align-self: flex-end;
     background: orange;
 }
