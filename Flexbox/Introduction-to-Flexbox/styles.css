@@ -1,4 +1,5 @@
 body{
+    --rojo: red;/*Una de las formas de  declarar una variable*/
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -18,8 +19,8 @@ body{
 }
 
 .caja{
-    flex-grow: 1;
-
+    /*flex-grow: 1;Sirve para especificar que cantidad de espacio puede usar cada elemento flex */
+    /*flex-basis: calc((100% / 3) - 68px); Se pueden combinar para hacer elementos flexibles*/
 
     font-size: 20px;
     font-weight: bold;
@@ -32,7 +33,7 @@ body{
 }
 
 .red{
-    background: red;
+    background: var(--rojo);
 }
 
 .green{
@@ -40,9 +41,11 @@ body{
 }
 
 .blue{
+    /*flex-shrink: 0;Sirve para reducir el tamaño de una caja lo contrario a flex-grow*/
     background: blue;
 }
 
 .orange{
+    /*flex-basis: 100%;Sirve para declarar el ancho minimo o ancho base*/
     background: orange;
 }
